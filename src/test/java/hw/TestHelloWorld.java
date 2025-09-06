@@ -35,18 +35,18 @@ public class TestHelloWorld {
   @Test
   public void getYear() { // this test is OK, fix HelloWorld.java to make it pass!
     assertNotNull(fixture);
-    assertEquals(2025, fixture.getYear());
+    assertEquals(2025, fixture.getYear()); //fixed
   }
 
   @Test
   public void getMessageInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
-    assertEquals("hello world", list.get(1).getMessage());
+    assertEquals("hello world", list.get(0).getMessage()); //fixed index
   }
 
   @Test
   public void getYearInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
-    assertEquals(2025, list.get(1).getYear());
+    assertEquals(2025, list.get(0).getYear()); //fixed index
   }
 }
